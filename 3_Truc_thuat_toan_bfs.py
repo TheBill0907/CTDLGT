@@ -2,7 +2,10 @@
 # Công việc: Cài đặt thuật toán tìm kiếm theo chiều rộng (giai_bfs) dùng hàng đợi deque và truy vết ô cha
 
 from collections import deque
+from importlib import import_module
 
+
+hop_le = import_module("1_Hoang_tien_ich_me_cung").hop_le
 HUONG = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
 

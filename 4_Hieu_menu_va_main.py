@@ -1,6 +1,25 @@
 # Phụ trách: Đinh Trung Hiếu - MSSV: 125000193
 # Công việc: Hiển thị menu, hiển thị kết quả, phân tích nhận xét và điều phối chương trình chính (main)
 
+from importlib import import_module
+from pathlib import Path
+import sys
+
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+_tien_ich = import_module("1_Hoang_tien_ich_me_cung")
+_dfs = import_module("2_Nhu_thuat_toan_dfs")
+_bfs = import_module("3_Truc_thuat_toan_bfs")
+
+BAT_DAU = _tien_ich.BAT_DAU
+KET_THUC = _tien_ich.KET_THUC
+tim_vi_tri = _tien_ich.tim_vi_tri
+in_me_cung = _tien_ich.in_me_cung
+giai_dfs = _dfs.giai_dfs
+giai_bfs = _bfs.giai_bfs
+
+
 def hien_thi_menu():
     print("\n========== MENU GIẢI MÊ CUNG ==========")
     print("1. Hiển thị bản đồ")

@@ -1,6 +1,10 @@
 # Phụ trách: Trần Thị Quỳnh Như - MSSV: 125000162
 # Công việc: Cài đặt thuật toán tìm kiếm theo chiều sâu (giai_dfs) bằng đệ quy và quay lui
 
+from importlib import import_module
+
+
+hop_le = import_module("1_Hoang_tien_ich_me_cung").hop_le
 HUONG = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
 
